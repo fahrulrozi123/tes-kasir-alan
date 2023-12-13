@@ -1,0 +1,65 @@
+.navbar-nav .nav-item.active .nav-link {
+    color: blue !important;
+    border-bottom: 2px solid blue;
+}
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-input-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.file-input {
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.rupiah-label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+    margin-right: -1px;
+}
+
+.rupiah-container {
+    display: flex;
+    align-items: center;
+}
+
+@media print {
+    #order-list {
+        display: block !important;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #order-list, #order-list * {
+        visibility: visible;
+    }
+
+    #order-list {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
