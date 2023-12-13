@@ -54,7 +54,7 @@
 <!-- Modal payment-->
 <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 150%;">
+        <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="paymentModalLabel">Detail Pesanan</h5>
             </div>

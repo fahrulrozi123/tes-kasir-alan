@@ -28,7 +28,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="harga" class="form-label">Harga:</label>
-                        <input type="number" name="harga" class="form-control" value="{{ $product->harga }}" step="0.01" required>
+                        <div class="col-md-12">
+                            <div class="rupiah-container">
+                                <span class="rupiah-label">Rp</span>
+                                <input type="number" name="harga" class="form-control" value="{{ $product->harga }}" step="0.01" required>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="mb-3 mt-2 d-flex justify-content-end">
 
