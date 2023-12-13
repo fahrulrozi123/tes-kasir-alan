@@ -11,7 +11,7 @@
                             <img class="mx-auto d-block" src="{{ asset('foto_produk/' . $product->foto) }}" alt="{{ $product->nama }}" style="max-width: 100%; height: auto;">
                             <div class="card-body text-center">
                                 <h5 class="card-title">{{ $product->nama }}</h5>
-                                <p class="card-text">Rp. {{ number_format($product->harga, 0, ',', '.') }}</p>
+                                <p class="card-text text-primary">Rp. {{ number_format($product->harga, 0, ',', '.') }}</p>
                                 <input type="hidden" class="form-control quantity" value="1" readonly>
                                 <button class="btn btn-success add-to-order" 
                                     data-product-id="{{ $product->id }}" 
@@ -74,13 +74,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group mt-3">
-                            <label for="paymentInput">Pembayaran</label>
+                            <label for="paymentInput" class="mb-2">Uang Pembeli (Rp)</label>
                             <input type="text" class="form-control" id="paymentInput" placeholder="Jumlah Pembayaran">
                         </div>
                         <div class="">
+                            <button type="button" class="btn btn-success mt-2" onclick="payAndShowAlert()">Pay</button>
                             <div id="totalPayment" class="mt-3"></div>
-                            <div id="changeAmount" class="mt-3"></div>
-                            <button type="button" class="btn btn-success" onclick="payAndShowAlert()">Pay</button>
+                            <div id="changeAmount" class=""></div>
                         </div>
                     </div>
                 </div>
