@@ -7,6 +7,28 @@
     <title>Test Kasir Alan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 60px;
+        }
+
+        .footer {
+            flex-shrink: 0;
+            height: 60px;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body class="bg-light">
 
@@ -33,12 +55,21 @@
         </div>
     </nav>
     
-<div class="">
+    <div class="content">
+        @yield('content')
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 <b>Alan Resto.</b> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    @yield('content')
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
