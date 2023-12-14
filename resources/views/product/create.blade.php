@@ -14,7 +14,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="foto" class="form-label">Foto:</label>
-                        <input type="file" name="foto" class="form-control">
+                        <input type="file" name="foto" class="form-control" required>
                     </div>
                     <div class="row mt-2">
                         <label for="foto" class="form-label">Harga:</label>

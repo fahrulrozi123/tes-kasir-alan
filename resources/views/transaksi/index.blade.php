@@ -75,7 +75,7 @@
                     <div class="col-md-4">
                         <div class="form-group mt-3">
                             <label for="paymentInput" class="mb-2">Uang Pembeli (Rp)</label>
-                            <input type="text" class="form-control" id="paymentInput" placeholder="Jumlah Pembayaran">
+                            <input type="number" class="form-control" id="paymentInput" placeholder="Jumlah Pembayaran">
                         </div>
                         <div class="">
                             <a href="/transaksi" class="btn btn-outline-secondary mt-2">Cancel</a>
@@ -270,7 +270,12 @@
             $('#paymentInput').val('');
             $('#payment-details').empty();
         } else {
-            alert('Jumlah pembayaran kurang.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Failled!',
+                html: 'Jumlah pembayaran kurang',
+                confirmButtonColor: 'red',
+            });
         }
     }
 
